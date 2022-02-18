@@ -827,15 +827,13 @@ color: var(--second-text-color);
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
 	fill: var(--accent-color);
-} 
+}  
  
  .modal-check {
     position: absolute;
     appearance: none;
  }
 .modal-check-text {
-margin-right: auto;
-margin-left: auto;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -872,4 +870,9 @@ margin-bottom: 30px;
     text-decoration: underline;
     color: var(--accent-color);
     display: block;
+}
+
+.modal-check:hover + .modal-check-text>.modal-check-icon,
+.modal-check:focus + .modal-check-text>.modal-check-icon {
+  border-color: var(--accent-color);
 }
